@@ -1,87 +1,446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Shubham Kumar Singh — Computer Science student and full-stack developer.">
-  <title>Shubham Kumar Singh | Software Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="loader" class="loader"><div class="loader-content"><div class="loader-ring"></div><p class="loader-text">SHUBHAM KUMAR SINGH</p></div></div>
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Home">SKS<span>.</span></a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Shubham Kumar Singh — Computer Science student and full-stack developer."
+    />
+    <title>Shubham Kumar Singh | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="loader-ring"></div>
+        <p class="loader-text">SHUBHAM KUMAR SINGH</p>
+      </div>
     </div>
-  </nav>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero-container container">
-        <div class="hero-content reveal">
-          <p class="eyebrow"><span></span> Hello, I'm</p>
-          <h1>Shubham Kumar<br><span class="gradient-text">Singh</span></h1>
-          <h2>I'm a <span id="typed-text"></span><span class="cursor">|</span></h2>
-          <p class="hero-copy">Computer Science student passionate about building responsive, practical web experiences and solving real-world problems through code.</p>
-          <div class="hero-actions"><a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a><a href="resume.pdf" class="btn btn-outline" download>Download Resume <i class="fas fa-download"></i></a></div>
-          <div class="hero-socials"><a href="https://github.com/ishubham13" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/shubham-kumar-singh-57a140357/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="mailto:shubham.s.91732@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" aria-label="Home">SKS<span>.</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-container container">
+          <div class="hero-content reveal">
+            <p class="eyebrow"><span></span> Hello, I'm</p>
+            <h1>Shubham Kumar<br /><span class="gradient-text">Singh</span></h1>
+            <h2>
+              I'm a <span id="typed-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-copy">
+              Computer Science student passionate about building responsive,
+              practical web experiences and solving real-world problems through
+              code.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary"
+                >View My Work <i class="fas fa-arrow-right"></i></a
+              ><a href="resume.pdf" class="btn btn-outline" download
+                >Download Resume <i class="fas fa-download"></i
+              ></a>
+            </div>
+            <div class="hero-socials">
+              <a
+                href="https://github.com/ishubham13"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i></a
+              ><a
+                href="https://www.linkedin.com/in/shubham-kumar-singh-57a140357/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i></a
+              ><a href="mailto:shubham.s.91732@gmail.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="portrait-card">
+              <div class="portrait-glow"></div>
+              <div class="initials">SKS</div>
+              <div class="code-pill p1"><i class="fab fa-java"></i> Java</div>
+              <div class="code-pill p2"><i class="fab fa-react"></i> React</div>
+              <div class="code-pill p3"><i class="fas fa-code"></i> DSA</div>
+            </div>
+          </div>
         </div>
-        <div class="hero-visual reveal">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="portrait-card"><div class="portrait-glow"></div><div class="initials">SKS</div><div class="code-pill p1"><i class="fab fa-java"></i> Java</div><div class="code-pill p2"><i class="fab fa-react"></i> React</div><div class="code-pill p3"><i class="fas fa-code"></i> DSA</div></div>
+        <a class="scroll-down" href="#about"
+          ><span>Scroll Down</span><i class="fas fa-arrow-down"></i
+        ></a>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Get to know me</p>
+            <h2>About <span>Me</span></h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-card reveal">
+              <div class="about-icon">
+                <i class="fas fa-user-astronaut"></i>
+              </div>
+              <h3>Driven by curiosity.<br />Focused on impact.</h3>
+              <p>
+                I am a dedicated B.Tech Computer Science student with a strong
+                foundation in Java, Data Structures & Algorithms, and full-stack
+                web development. I enjoy turning ideas into polished, usable
+                products.
+              </p>
+              <p>
+                A quick learner and collaborative teammate, I am looking for
+                opportunities to contribute, grow, and apply my technical
+                knowledge to meaningful challenges.
+              </p>
+            </div>
+            <div class="stats-grid reveal">
+              <div class="stat-card">
+                <strong data-count="70">0</strong><span>+</span>
+                <p>Coding Problems</p>
+              </div>
+              <div class="stat-card">
+                <strong data-count="2">0</strong><span>+</span>
+                <p>Web Projects</p>
+              </div>
+              <div class="stat-card">
+                <strong data-count="1">0</strong><span></span>
+                <p>National Hackathon</p>
+              </div>
+              <div class="stat-card">
+                <strong data-count="2023">0</strong><span></span>
+                <p>B.Tech Journey</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>What I work with</p>
+            <h2>Technical <span>Skills</span></h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <i class="fas fa-code"></i>
+              <h3>Languages</h3>
+              <div class="tags">
+                <span>Java</span><span>JavaScript</span><span>HTML5</span
+                ><span>CSS3</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <i class="fas fa-layer-group"></i>
+              <h3>Frameworks & Web</h3>
+              <div class="tags">
+                <span>React.js</span><span>Responsive UI</span
+                ><span>Frontend Development</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <i class="fas fa-database"></i>
+              <h3>Database & Tools</h3>
+              <div class="tags">
+                <span>MySQL</span><span>GitHub</span><span>VS Code</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <i class="fas fa-brain"></i>
+              <h3>Core Concepts</h3>
+              <div class="tags">
+                <span>OOP</span><span>Data Structures</span
+                ><span>Algorithms</span><span>Problem Solving</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Learning by building</p>
+            <h2>Experience <span>& Growth</span></h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <div>
+                    <p class="timeline-date">National-Level Hackathon</p>
+                    <h3>Oriental Tech Hack 2.0</h3>
+                  </div>
+                  <span class="badge">Team Experience</span>
+                </div>
+                <p>
+                  Collaborated under strict time constraints to develop an
+                  innovative software solution, strengthening hands-on
+                  development, teamwork, communication, and problem-solving
+                  skills.
+                </p>
+                <div class="tags">
+                  <span>Collaboration</span><span>Rapid Development</span
+                  ><span>Problem Solving</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Selected work</p>
+            <h2>Featured <span>Projects</span></h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-visual event-bg">
+                <i class="fas fa-calendar-check"></i><span>01</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">January 2026 · Minor Project</div>
+                <h3>College Event Management System</h3>
+                <p>
+                  A responsive system that streamlines event creation, user
+                  registration, and participant management while reducing manual
+                  coordination effort.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <a
+                  href="https://ishubham13.github.io/college-and-events/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo <i class="fas fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual agri-bg">
+                <i class="fas fa-seedling"></i><span>02</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">May 2026 · Frontend Application</div>
+                <h3>AgriDirect — Farmers to Consumers</h3>
+                <p>
+                  A marketplace connecting farmers directly with consumers
+                  through multilingual support, cart management, product
+                  discovery, and a farmer dashboard.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <a
+                  href="https://ishubham13.github.io/Agritech/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo <i class="fas fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Academic foundation</p>
+            <h2>My <span>Education</span></h2>
+          </div>
+          <div class="education-card reveal">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <div class="project-meta">2023 — Present</div>
+              <h3>Bachelor of Technology</h3>
+              <h4>Computer Science and Engineering</h4>
+              <p>Oriental College of Technology</p>
+              <p class="muted">
+                <i class="fas fa-location-dot"></i> Bhopal, Madhya Pradesh
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Milestones</p>
+            <h2>Achievements <span>& Highlights</span></h2>
+          </div>
+          <div class="achievement-grid">
+            <article class="achievement-card reveal">
+              <i class="fas fa-trophy"></i>
+              <div>
+                <h3>Oriental Tech Hack 2.0</h3>
+                <p>
+                  Participated in a national-level hackathon and delivered under
+                  competitive time constraints.
+                </p>
+              </div>
+            </article>
+            <article class="achievement-card reveal">
+              <i class="fas fa-terminal"></i>
+              <div>
+                <h3>70+ Coding Problems</h3>
+                <p>
+                  Consistently sharpened algorithmic thinking across LeetCode
+                  and GeeksforGeeks.
+                </p>
+              </div>
+            </article>
+            <article class="achievement-card reveal">
+              <i class="fas fa-people-group"></i>
+              <div>
+                <h3>Team Collaboration</h3>
+                <p>
+                  Built practical software in a team environment while resolving
+                  implementation challenges.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Let's build something</p>
+            <h2>Get In <span>Touch</span></h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-copy reveal">
+              <h3>Have a project or opportunity?</h3>
+              <p>
+                I'm open to internships, collaborative projects, and
+                conversations about software development. Drop me a message and
+                I'll get back to you.
+              </p>
+              <div class="contact-list">
+                <a href="mailto:shubham.s.91732@gmail.com"
+                  ><i class="fas fa-envelope"></i
+                  ><span><small>Email</small>shubham.s.91732@gmail.com</span></a
+                ><a href="tel:+919818808897"
+                  ><i class="fas fa-phone"></i
+                  ><span><small>Phone</small>+91 98188 08897</span></a
+                >
+                <div>
+                  <i class="fas fa-location-dot"></i
+                  ><span
+                    ><small>Location</small>Bhopal, Madhya Pradesh, India</span
+                  >
+                </div>
+              </div>
+            </div>
+            <form class="contact-form reveal" id="contact-form">
+              <div class="form-row">
+                <label
+                  >Your Name<input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    required /></label
+                ><label
+                  >Your Email<input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                /></label>
+              </div>
+              <label
+                >Subject<input
+                  type="text"
+                  name="subject"
+                  placeholder="What is this about?" /></label
+              ><label
+                >Message<textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your idea"
+                  required
+                ></textarea>
+              </label>
+              <p id="contact-status" class="form-status" aria-live="polite"></p>
+              <button class="btn btn-primary" type="submit">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>Designed & Developed by <span>Shubham Kumar Singh</span></p>
+        <div>
+          <a
+            href="https://github.com/ishubham13"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i></a
+          ><a
+            href="https://www.linkedin.com/in/shubham-kumar-singh-57a140357/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
-      <a class="scroll-down" href="#about"><span>Scroll Down</span><i class="fas fa-arrow-down"></i></a>
-    </section>
-
-    <section id="about" class="section"><div class="container"><div class="section-heading reveal"><p>Get to know me</p><h2>About <span>Me</span></h2></div><div class="about-grid">
-      <div class="about-card reveal"><div class="about-icon"><i class="fas fa-user-astronaut"></i></div><h3>Driven by curiosity.<br>Focused on impact.</h3><p>I am a dedicated B.Tech Computer Science student with a strong foundation in Java, Data Structures & Algorithms, and full-stack web development. I enjoy turning ideas into polished, usable products.</p><p>A quick learner and collaborative teammate, I am looking for opportunities to contribute, grow, and apply my technical knowledge to meaningful challenges.</p></div>
-      <div class="stats-grid reveal"><div class="stat-card"><strong data-count="70">0</strong><span>+</span><p>Coding Problems</p></div><div class="stat-card"><strong data-count="2">0</strong><span>+</span><p>Web Projects</p></div><div class="stat-card"><strong data-count="1">0</strong><span></span><p>National Hackathon</p></div><div class="stat-card"><strong data-count="2023">0</strong><span></span><p>B.Tech Journey</p></div></div>
-    </div></div></section>
-
-    <section id="skills" class="section section-alt"><div class="container"><div class="section-heading reveal"><p>What I work with</p><h2>Technical <span>Skills</span></h2></div><div class="skills-grid">
-      <article class="skill-card reveal"><i class="fas fa-code"></i><h3>Languages</h3><div class="tags"><span>Java</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></article>
-      <article class="skill-card reveal"><i class="fas fa-layer-group"></i><h3>Frameworks & Web</h3><div class="tags"><span>React.js</span><span>Responsive UI</span><span>Frontend Development</span></div></article>
-      <article class="skill-card reveal"><i class="fas fa-database"></i><h3>Database & Tools</h3><div class="tags"><span>MySQL</span><span>GitHub</span><span>VS Code</span></div></article>
-      <article class="skill-card reveal"><i class="fas fa-brain"></i><h3>Core Concepts</h3><div class="tags"><span>OOP</span><span>Data Structures</span><span>Algorithms</span><span>Problem Solving</span></div></article>
-    </div></div></section>
-
-    <section id="experience" class="section"><div class="container"><div class="section-heading reveal"><p>Learning by building</p><h2>Experience <span>& Growth</span></h2></div><div class="timeline">
-      <article class="timeline-item reveal"><div class="timeline-dot"><i class="fas fa-laptop-code"></i></div><div class="timeline-card"><div class="timeline-top"><div><p class="timeline-date">National-Level Hackathon</p><h3>Oriental Tech Hack 2.0</h3></div><span class="badge">Team Experience</span></div><p>Collaborated under strict time constraints to develop an innovative software solution, strengthening hands-on development, teamwork, communication, and problem-solving skills.</p><div class="tags"><span>Collaboration</span><span>Rapid Development</span><span>Problem Solving</span></div></div></article>
-    </div></div></section>
-
-    <section id="projects" class="section section-alt"><div class="container"><div class="section-heading reveal"><p>Selected work</p><h2>Featured <span>Projects</span></h2></div><div class="projects-grid">
-      <article class="project-card reveal"><div class="project-visual event-bg"><i class="fas fa-calendar-check"></i><span>01</span></div><div class="project-body"><div class="project-meta">January 2026 · Minor Project</div><h3>College Event Management System</h3><p>A responsive system that streamlines event creation, user registration, and participant management while reducing manual coordination effort.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://ishubham13.github.io/college-and-events/" target="_blank" rel="noopener">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
-      <article class="project-card reveal"><div class="project-visual agri-bg"><i class="fas fa-seedling"></i><span>02</span></div><div class="project-body"><div class="project-meta">May 2026 · Frontend Application</div><h3>AgriDirect — Farmers to Consumers</h3><p>A marketplace connecting farmers directly with consumers through multilingual support, cart management, product discovery, and a farmer dashboard.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://ishubham13.github.io/Agritech/" target="_blank" rel="noopener">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
-    </div></div></section>
-
-    <section id="education" class="section"><div class="container"><div class="section-heading reveal"><p>Academic foundation</p><h2>My <span>Education</span></h2></div><div class="education-card reveal"><div class="edu-icon"><i class="fas fa-graduation-cap"></i></div><div><div class="project-meta">2023 — Present</div><h3>Bachelor of Technology</h3><h4>Computer Science and Engineering</h4><p>Oriental College of Technology</p><p class="muted"><i class="fas fa-location-dot"></i> Bhopal, Madhya Pradesh</p></div></div></div></section>
-
-    <section id="achievements" class="section section-alt"><div class="container"><div class="section-heading reveal"><p>Milestones</p><h2>Achievements <span>& Highlights</span></h2></div><div class="achievement-grid">
-      <article class="achievement-card reveal"><i class="fas fa-trophy"></i><div><h3>Oriental Tech Hack 2.0</h3><p>Participated in a national-level hackathon and delivered under competitive time constraints.</p></div></article>
-      <article class="achievement-card reveal"><i class="fas fa-terminal"></i><div><h3>70+ Coding Problems</h3><p>Consistently sharpened algorithmic thinking across LeetCode and GeeksforGeeks.</p></div></article>
-      <article class="achievement-card reveal"><i class="fas fa-people-group"></i><div><h3>Team Collaboration</h3><p>Built practical software in a team environment while resolving implementation challenges.</p></div></article>
-    </div></div></section>
-
-    <section id="contact" class="section"><div class="container"><div class="section-heading reveal"><p>Let's build something</p><h2>Get In <span>Touch</span></h2></div><div class="contact-grid">
-      <div class="contact-copy reveal"><h3>Have a project or opportunity?</h3><p>I'm open to internships, collaborative projects, and conversations about software development. Drop me a message and I'll get back to you.</p><div class="contact-list"><a href="mailto:shubham.s.91732@gmail.com"><i class="fas fa-envelope"></i><span><small>Email</small>shubham.s.91732@gmail.com</span></a><a href="tel:+919818808897"><i class="fas fa-phone"></i><span><small>Phone</small>+91 98188 08897</span></a><div><i class="fas fa-location-dot"></i><span><small>Location</small>Bhopal, Madhya Pradesh, India</span></div></div></div>
-      <form class="contact-form reveal" id="contact-form"><div class="form-row"><label>Your Name<input type="text" name="name" placeholder="Enter your name" required></label><label>Your Email<input type="email" name="email" placeholder="Enter your email" required></label></div><label>Subject<input type="text" name="subject" placeholder="What is this about?"></label><label>Message<textarea name="message" rows="5" placeholder="Tell me about your idea" required></textarea></label><p id="contact-status" class="form-status" aria-live="polite"></p><button class="btn btn-primary" type="submit">Send Message <i class="fas fa-paper-plane"></i></button></form>
-    </div></div></section>
-  </main>
-
-  <footer><div class="container footer-inner"><p>Designed & Developed by <span>Shubham Kumar Singh</span></p><div><a href="https://github.com/ishubham13" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/shubham-kumar-singh-57a140357/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div></footer>
-  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-  <script src="script.js"></script>
-</body>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
 </html>
+<!-- github pages trigger -->
